@@ -69,7 +69,5 @@ todoUl.addEventListener("click", (e) => {
     e.target.parentElement.remove();
     todoList = todoList.filter((todo) => todo.id != idAttr);
     localStorage.setItem("todoList", JSON.stringify(todoList));
-  } else {
-    alert("other element");
   }
 });
